@@ -140,7 +140,21 @@ STATICFILES_DIRS = [
 ]
 
 # media file configuration
-
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
+# end media file
+
+# alert message
+from django.contrib.messages import constants as messages
+MESSAGE_TAGS = {
+    messages.ERROR: 'danger',
+}
+# end alert
+
+# SMTP CONFIGURATION Email
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'parnavchauhan1182@gmail.com'
+EMAIL_HOST_PASSWORD = 'chauhan 1234'
+EMAIL_USE_TLS = True
 
